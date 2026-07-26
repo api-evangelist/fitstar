@@ -1,25 +1,67 @@
 aid: fitstar
-name: FitStar *
-description: 'FitStar * is a company surfaced as a portfolio company of gv, trinity-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead
-  awaiting the enrichment pipeline.'
+name: FitStar
+description: >-
+  FitStar Labs, Inc. was a San Francisco based consumer fitness company that built
+  FitStar Personal Trainer and FitStar Yoga, adaptive video workout apps that adjusted
+  each session to the user's feedback and fitness level. Backed by GV (Google Ventures)
+  and Trinity Ventures, FitStar was acquired by Fitbit on March 5, 2015 for $17.8
+  million and folded into the Fitbit Coach product line. The company is DEFUNCT: the
+  fitstar.com domain no longer serves web content (last archived live October 2017),
+  the FitStar apps have been retired, and no developer portal, documentation, or public
+  API surface survives. This profile is retained as a historical record in the API
+  Evangelist network; there is nothing to enrich beyond identity and domain posture.
 url: https://raw.githubusercontent.com/api-evangelist/fitstar/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/1479331?v=4
 x-type: company
 x-source: vc-portfolio
+x-status: defunct
+x-defunct-reason: acquired
+x-acquired-by: fitbit
+x-acquired-date: '2015-03-05'
+x-acquired-amount-usd: 17800000
 x-backed-by:
 - gv
 - trinity-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Life Sciences
+- Defunct
+- Acquired
+- Fitness
+- Health and Wellness
+- Consumer Applications
+- Mobile Applications
+- Personal Training
 apis: []
+common:
+- type: GitHubOrganization
+  name: FitStar Labs, Inc. on GitHub
+  url: https://github.com/fitstar
+- type: DomainSecurity
+  name: Domain security posture
+  url: security/fitstar-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

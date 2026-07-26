@@ -1,0 +1,54 @@
+generated: '2026-07-20'
+method: probed
+source: dig probe of fitstar.com (2026-07-20)
+note: >-
+  FitStar Labs, Inc. is defunct — acquired by Fitbit on 2015-03-05 and wound down.
+  The fitstar.com domain is still registered and actively administered (Google Cloud
+  DNS, Google Workspace mail, Salesforce SPF include, CAA restricted to pki.goog),
+  but it publishes NO A record and serves no web content, so there are no HTTPS/TLS
+  or HSTS observations to record. Mail and DNS posture is recorded because it is real
+  probed data; absence of web hosts is a valid, expected result.
+hosts:
+  - host: fitstar.com
+    a_records: []
+    https: false
+    resolves: false
+    tls_version: null
+    hsts: null
+    note: NS delegated but no A record; host does not resolve
+  - host: www.fitstar.com
+    a_records: []
+    https: false
+    resolves: false
+    note: does not resolve
+  - host: api.fitstar.com
+    a_records: []
+    https: false
+    resolves: false
+    note: does not resolve
+  - host: developer.fitstar.com
+    a_records: []
+    https: false
+    resolves: false
+    note: does not resolve
+domains:
+  - domain: fitstar.com
+    nameservers:
+      - ns-cloud-b1.googledomains.com.
+      - ns-cloud-b2.googledomains.com.
+      - ns-cloud-b3.googledomains.com.
+      - ns-cloud-b4.googledomains.com.
+    dnssec: false
+    caa:
+      - 0 issue "pki.goog"
+    spf: true
+    spf_record: 'v=spf1 ip4:13.111.15.117 ip4:13.111.15.118 include:_spf.google.com include:_spf.salesforce.com ~all'
+    dmarc: true
+    dmarc_policy: none
+    dmarc_record: 'v=DMARC1; P=none; rua=mailto:dmarc-reports@fitstar.com'
+    mx: true
+    mx_records:
+      - 5 alt1.aspmx.l.google.com.
+      - 5 alt2.aspmx.l.google.com.
+      - 10 alt3.aspmx.l.google.com.
+      - 10 alt4.aspmx.l.google.com.
