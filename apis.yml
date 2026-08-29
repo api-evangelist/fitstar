@@ -11,6 +11,17 @@ description: >-
   API surface survives. This profile is retained as a historical record in the API
   Evangelist network; there is nothing to enrich beyond identity and domain posture.
 url: https://raw.githubusercontent.com/api-evangelist/fitstar/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
